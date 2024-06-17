@@ -16,7 +16,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-credentials_path = '...json'
+credentials_path = 'example.json'  # change to your :^
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
 
 client = storage.Client()
